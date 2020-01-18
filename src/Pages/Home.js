@@ -1,5 +1,5 @@
 import React from "react";
-import ImageSlider from '../Components/ImageSlider'
+import ImageSlider from '../Components/ImageSlider/ImageSlider'
 import logo from '../assets/images/logo.png';
 import Footer from '../Components/footer'
 

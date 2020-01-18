@@ -12,6 +12,7 @@
     "fixed-data-table": "^0.6.5",
     "google-maps-react": "^2.0.2",
     "react": "^16.12.0",
+    "react-animated-slider": "^2.0.0",
     "react-dom": "^16.12.0",
     "react-entypo": "^1.3.0",
     "react-router-dom": "^5.1.2",
