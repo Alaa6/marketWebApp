@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from '../Components/footer'
 import { useRouteMatch, useParams} from 'react-router-dom'
+import formal from '../assets/images/baba.jpg'
 
 
 
@@ -81,7 +82,10 @@ class Home extends React.Component{
                أساليب التخزين الجاف والمبرد، كما تم زيادة أسطول سيارات التوزيع لرفع مستوى الخدمة المقدمة للعملاء، وتسهيل التعاون مع الموردين. تواصل الشركة 
                استراتيجيتها التوسعية وزيادة قاعدة الفروع على مستوى المملكة وفق رؤية متكاملة واهتمام يتجدد بتقديم خدمات متميزة وشاملة</p>
 
+               <h3 style={{color:'#7ac142' , textAlign:'end' ,marginRight:50 ,paddingRight:20}}> مؤسس المحل </h3>
+               <img src={formal} style={{ width :400 ,height:350}}/>
                <h3 style={{color:'#7ac142' , textAlign:'end' ,marginRight:50 ,paddingRight:20}}>طاقم العمل </h3>
+              
               {SimpleList()}
 
 

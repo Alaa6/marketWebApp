@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Home from '../Pages/Home'
 import About from '../Pages/About'
-import Products from '../Pages/Products'
+import Products from '../Pages/Products/Products'
 import ContactUs from '../Pages/ContactUs'
 import Branches from '../Pages/Branches'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
