@@ -42,7 +42,7 @@ class ImageSlider extends React.Component {
     render() {
      
         return (
-         <Slider autoplay={4} duration={5000} >
+         <Slider autoplay={2} duration={4000} className ='slider' >
             {slides.map((slide, index) => 
             <div key={index}>
               <img src={slide.image}  />
