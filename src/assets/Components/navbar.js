@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Home from '../Pages/Home'
-import About from '../Pages/About'
-import Products from '../Pages/Products/Products'
-import ContactUs from '../Pages/ContactUs'
-import Branches from '../Pages/Branches'
+import Home from '../../Pages/Home'
+import About from '../../Pages/About'
+import Products from '../../Pages/Products/ProductList'
+import ContactUs from '../../Pages/ContactUs'
+import Branches from '../../Pages/Branches'
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import logo from '../assets/images/logo.png'
 import Navbar from 'navbar-react'
+import ProductDetails from '../../Pages/Products/productDetails'
 
 
 const items =
@@ -30,11 +30,12 @@ class Navbar1 extends React.Component {
 
 
         <div>
+
           <ul id="nav" >
-            <li> <Link to="/"> الرئيسية </Link> </li>
-            <li> <Link to="/about"> عن الشركة</Link></li>
-            <li><Link to="/products"> المنتجات</Link></li>
-            <li><Link to="/branches"> الفروع</Link></li>
+            <li> <Link to="/"> الرئيسية </Link>        </li>
+            <li> <Link to="/about"> عن الشركة</Link>   </li>
+            <li> <Link to="/products"> المنتجات</Link> </li>
+            <li> <Link to="/branches"> الفروع</Link>   </li>
             <li id="lastItem"><Link to="/contactUs"> اتصل بنا </Link></li>
           </ul>
 

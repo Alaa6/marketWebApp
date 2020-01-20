@@ -1,25 +1,28 @@
 import React from 'react';
-import './App.css';
-import Header from './Components/header'
-import Navbar from './Components/navbar'
-import Footer from './Components/footer'
-
+import './App.scss';
+import '../src/assets/Styles/generalStyle.scss'
+import Header from './assets/Components/header'
+import Navbar from './assets/Components/navbar'
+import Footer from './assets/Components/footer'
+import { BrowserRouter } from "react-router-dom";
 
 
 
 
 
 function App() {
- 
+
   return (
-    <div className="App">
-      <Header />
-      {/* <Navbar /> */}
-      <Footer/>
-  
    
-    
-    </div>
+
+      <div className="App">
+        <Header />
+        {/* <Navbar /> */}
+        <Footer />
+      </div>
+
+
+
   );
 }
 

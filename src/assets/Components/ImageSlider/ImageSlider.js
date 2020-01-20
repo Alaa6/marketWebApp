@@ -5,9 +5,9 @@ import 'react-animated-slider/build/horizontal.css';
 import Slider from 'react-animated-slider';
 
 import { Slide ,Fade} from 'react-slideshow-image';
-import pic1 from '../../assets/images/pic1.png'
-import pic2 from '../../assets/images/pic2.png'
-import pic3 from '../../assets/images/pic3.png'
+import pic1 from '../../images/pic1.png'
+import pic2 from '../../images/pic2.png'
+import pic3 from '../../images/pic3.png'
 
 
 

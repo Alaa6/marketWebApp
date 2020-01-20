@@ -1,7 +1,17 @@
 
 import React from 'react';
-import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
+import productCard from '../../assets/Views/ProductCard/productCard'
+
+import './product.scss';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+
 import product1 from '../../assets/images/product1.png'
 import product2 from '../../assets/images/product2.png'
 import product3 from '../../assets/images/product3.png'
@@ -13,52 +23,79 @@ import product8 from '../../assets/images/product8.png'
 import product9 from '../../assets/images/product9.png'
 import product10 from '../../assets/images/product10.png'
 
-{/*const slides = [
-  { price: ' : السعر الاصلي' , disPrice: ': السعر بعد الخصم' ,image :Logo },
-  { price: ' : السعر الاصلي' , disPrice: ': السعر بعد الخصم' ,image :Logo },
-  { price: ' : السعر الاصلي' , disPrice: ': السعر بعد الخصم' ,image :Logo },
-  { price: ' : السعر الاصلي' , disPrice: ': السعر بعد الخصم' ,image :Logo },
-  { price: ' : السعر الاصلي' , disPrice: ': السعر بعد الخصم' ,image :Logo },
- 
-];*/
-}
-const movies = [
-  product1,
-  product2,
-  product3,
-  product4,
-  product5,
-  product6,
-  product7,
-  product8,
-  product9,
-  product10,
+import ProductDetails from './productDetails'
+
+
+const Products = [
+ {img : product1 , name :'بيبسي' },
+ {img : product2 , name :'سي فود' },
+ {img : product3 , name :'فليه' },
+ {img : product4 , name :'بيبسي' },
+ {img : product5 , name :'طحينة' },
+ {img : product6 , name :'حلويات شرقية' },
+ {img : product7 , name :'وافل' },
+ {img : product8 , name :'غريبة' },
+ {img : product9 , name :'رنجة' },
+ {img : product10 , name :'بيبسي' },
+  
 ];
 
 
-class ContactUs extends React.Component {
+class ProductList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: '' };
+    this.state = { 
+      Products :[
+        {img : product1 , name :'بيبسي' },
+        {img : product2 , name :'سي فود' },
+        {img : product3 , name :'فليه' },
+        {img : product4 , name :'بيبسي' },
+        {img : product5 , name :'طحينة' },
+        {img : product6 , name :'حلويات شرقية' },
+        {img : product7 , name :'وافل' },
+        {img : product8 , name :'غريبة' },
+        {img : product9 , name :'رنجة' },
+        {img : product10 , name :'بيبسي' },
+         
+       ]
+       
+    };
 
       
   }
 
+
+
   render() {
+   
+
     return (
       <div>
-
+      
 
 <div className="container">
-        {movies.map(src => (
-          <div
-            key={src}
-            className="card"
-            style={{
-              backgroundImage: `url(${src})`
-            }}
-          />
-        ))}
+
+
+   
+        {Products.map((src ,index) => {
+          return <React.Fragment key={index}>
+
+         { productCard({
+           index :index ,
+           imgSrc :src.img ,
+           productName : src.name ,
+           price: '300' ,
+           buttomText :'تفاصيل ' ,
+           onClick : null
+         })}
+
+        </React.Fragment> 
+
+        })
+        
+        }
+
+            
       </div>
 
 
@@ -107,4 +144,4 @@ class ContactUs extends React.Component {
   }
 }
 
-export default ContactUs;
+export default ProductList;

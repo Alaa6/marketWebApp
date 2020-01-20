@@ -1,9 +1,8 @@
 
-import pic1 from '../assets/images/pic1.png'
+import pic1 from '../images/pic1.png'
 import Footer from '../Components/footer'
 import React, { Component, useRef, useEffect } from 'react';
 import ReactShadowScroll from 'react-shadow-scroll';
-import branchIcon from '../assets/images/branch_icon.png'
 import { Map, GoogleApiWrapper } from 'google-maps-react';
 
 

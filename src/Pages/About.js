@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from '../Components/footer'
 import { useRouteMatch, useParams} from 'react-router-dom'
 import formal from '../assets/images/baba.jpg'
+import CONFIG from '../assets/config'
 
 
 
@@ -21,19 +21,19 @@ class Home extends React.Component{
 
     componentDidMount() {
         var that = this;
-        var url = `https://randomuser.me/api/?page=${this.state.page}&results=10` ;
+        var url = CONFIG.api ;
         console.log("-----------url:"+url);
 
         fetch(url ,{method :'Get'})
-        .then(function(response){ 
-            return response.json();})
+        .then((response)=> response.json()) //then
+            
 
-        .then(function(result){
-           that.setState({StateResult : [...that.state.StateResult,...result.results] })
+        .then(function(result){ //then
+           that.setState({StateResult : [...that.state.StateResult,...result.results] }) 
             console.log(result.results);
     
          })
-         .catch(function(error){
+         .catch(function(error){  //catch
              console.log("-------- error ------- "+error);
              alert('result :'+ error);
          });
