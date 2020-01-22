@@ -9,7 +9,7 @@ import Header from './Components/header'
 import history from '../utils/History'
 import Home from '../Pages/Home';
 import ProductDetails from '../Pages/Products/productDetails'
-
+import Footer from '../assets/Components/footer'
 
 
 class MyRouter extends React.Component {
@@ -32,6 +32,7 @@ class MyRouter extends React.Component {
                         <Route path="/branches"  component={Branches} />
                         <Route path="/details/:id/:name/:price/:disPrice/:img/:media/:imgSrc"  render={ (routeProps)=> <ProductDetails {...routeProps}/> }/>
                     </Switch>
+                    <Footer/>
                        
                     </div>
                        
