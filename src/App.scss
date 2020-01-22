@@ -17,6 +17,27 @@
   display:inline-block;
 }
 
+.first-div {
+  width:370px;
+  height:150px;
+  float:left;
+  background-color:pink;
+}
+
+.second-div {
+  width:200px;
+  height:150px;
+  float:left;
+  background-color:blue;
+}
+
+.third-div {
+  width:200px;
+  height:150px;
+  float:left;
+  background-color:purple;
+}
+
 /*Scroll*/
 .scroll{
   list-style: none;
@@ -65,6 +86,19 @@
   justify-content: unset;
 
 }
+
+.row-map{
+  flex-direction: row;
+}
+
+.container{
+  
+  float: right;
+}
+.map{
+  float: left;
+}
+
 .div{
 
   display: flex;
@@ -265,6 +299,7 @@ h3 {
   display: flex;
   justify-content: center;
   /* align-self: flex-end; */
+  float: none;
 
  
  
