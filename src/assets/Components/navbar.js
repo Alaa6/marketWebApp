@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import Home from '../../Pages/Home'
-import About from '../../Pages/About'
-import Products from '../../Pages/Products/ProductList'
-import ContactUs from '../../Pages/ContactUs'
-import Branches from '../../Pages/Branches'
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import Navbar from 'navbar-react'
-import ProductDetails from '../../Pages/Products/productDetails'
+import { Link } from "react-router-dom";
 
 
 const items =
@@ -26,7 +19,7 @@ class Navbar1 extends React.Component {
   render() {
     return (
      
-      <Router>
+    
 
 
         <div>
@@ -44,7 +37,7 @@ class Navbar1 extends React.Component {
 
 
 
-          <Switch>
+          {/*<Switch>
           <Route path="/branches">
               <Branches />
             </Route>
@@ -60,10 +53,10 @@ class Navbar1 extends React.Component {
             <Route path="/">
               <Home />
             </Route>
-          </Switch>
+          </Switch>*/}
         </div>
 
-      </Router>
+     
 
 
     );

@@ -3,14 +3,7 @@ import React from 'react';
 import productCard from '../../assets/Views/ProductCard/productCard'
 
 import './product.scss';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
+
 
 import product1 from '../../assets/images/product1.png'
 import product2 from '../../assets/images/product2.png'
@@ -23,20 +16,19 @@ import product8 from '../../assets/images/product8.png'
 import product9 from '../../assets/images/product9.png'
 import product10 from '../../assets/images/product10.png'
 
-import ProductDetails from './productDetails'
 
 
 const Products = [
- {img : product1 , name :'بيبسي' },
- {img : product2 , name :'سي فود' },
- {img : product3 , name :'فليه' },
- {img : product4 , name :'بيبسي' },
- {img : product5 , name :'طحينة' },
- {img : product6 , name :'حلويات شرقية' },
- {img : product7 , name :'وافل' },
- {img : product8 , name :'غريبة' },
- {img : product9 , name :'رنجة' },
- {img : product10 , name :'بيبسي' },
+ {img : product1 , name :'بيبسي',price:'16',disPrice:'13' },
+ {img : product2 , name :'سي فود',price:'60',disPrice:'40' },
+ {img : product3 , name :'فليه',price:'70',disPrice:'50' },
+ {img : product4 , name :'بيبسي' ,price:'10',disPrice:'7' },
+ {img : product5 , name :'طحينة' ,price:'15',disPrice:'12'},
+ {img : product6 , name :'حلويات شرقية',price:'10',disPrice:'7.5' },
+ {img : product7 , name :'وافل'  ,price:'40',disPrice:'30' },
+ {img : product8 , name :'غريبة' ,price:'30',disPrice:'25'},
+ {img : product9 , name :'رنجة' ,price:'30',disPrice:'25' },
+ {img : product10 , name :'بيبسي'  ,price:'16',disPrice:'13'},
   
 ];
 
@@ -46,16 +38,16 @@ class ProductList extends React.Component {
     super(props);
     this.state = { 
       Products :[
-        {img : product1 , name :'بيبسي' },
-        {img : product2 , name :'سي فود' },
-        {img : product3 , name :'فليه' },
-        {img : product4 , name :'بيبسي' },
-        {img : product5 , name :'طحينة' },
-        {img : product6 , name :'حلويات شرقية' },
-        {img : product7 , name :'وافل' },
-        {img : product8 , name :'غريبة' },
-        {img : product9 , name :'رنجة' },
-        {img : product10 , name :'بيبسي' },
+        {img : product1 , name :'بيبسي'  ,price:'16',disPrice:'13' },
+        {img : product2 , name :'سي فود' ,price:'60',disPrice:'40' },
+        {img : product3 , name :'فليه'   ,price:'70',disPrice:'50' },
+        {img : product4 , name :'بيبسي'  ,price:'16',disPrice:'13' },
+        {img : product5 , name :'طحينة'  ,price:'10',disPrice:'7'},
+        {img : product6 , name :'حلويات شرقية',price:'15',disPrice:'12' },
+        {img : product7 , name :'وافل'   ,price:'10',disPrice:'7.5'},
+        {img : product8 , name :'غريبة'  ,price:'40',disPrice:'30' },
+        {img : product9 , name :'رنجة'   ,price:'30',disPrice:'25'},
+        {img : product10 , name :'بيبسي' ,price:'16',disPrice:'13'},
          
        ]
        
@@ -74,28 +66,27 @@ class ProductList extends React.Component {
       
 
 <div className="container">
-
-
-   
         {Products.map((src ,index) => {
+          console.log('hey hey kabten    '+src.price);
+          
+           
           return <React.Fragment key={index}>
 
          { productCard({
+           
            index :index ,
            imgSrc :src.img ,
            productName : src.name ,
            price: '300' ,
            buttomText :'تفاصيل ' ,
-           onClick : null
+           onClick : null ,
+           price :src.price,
+           disPrice :src.disPrice
          })}
 
         </React.Fragment> 
 
-        })
-        
-        }
-
-            
+        }) }     
       </div>
 
 
