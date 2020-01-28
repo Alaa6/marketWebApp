@@ -30,9 +30,9 @@ class ContactUs extends React.Component {
                <img src={pic1} alt="Logo" className="Logo-a" />
 
              
-               <h3>alaa.ashraf775@gmail.com</h3>
-               <h3>27560995</h3>
-               <h3>01142815672</h3>
+               <h3>mail@last-ball.com</h3>
+               <h3>011235****</h3>
+               {/* <h3>01123584943</h3> */}
               
 
           </div>

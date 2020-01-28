@@ -1,10 +1,5 @@
 
-
-
-import pic1 from '../images/pic1.png'
-import Footer from '../Components/footer'
 import React, { Component, useRef, useEffect } from 'react';
-import ReactShadowScroll from 'react-shadow-scroll';
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 
 

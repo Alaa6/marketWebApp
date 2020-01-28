@@ -38,6 +38,9 @@ class Home extends React.Component {
 
         return (
             <div>
+               { console.log(<div/>)}
+                
+               
                 <ImageSlider />
                 <div className='body border'>
 

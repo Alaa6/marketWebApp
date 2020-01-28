@@ -23,8 +23,8 @@ class Footer extends React.Component {
                 </div>
               <div  style={{marginRight :100}}>
                 <p className='about-comp-word' style={{ marginTop: 80, fontSize: 20 }}> اتصل بنا </p>
-                <p className='about-comp-word' style={{ fontSize: 16, color: '#868686'}}>27560995</p>
-                <p className='about-comp-word' style={{  fontSize: 16 ,color: '#868686'}}>alaa.ashraf775@gmail.com</p>
+                <p className='about-comp-word' style={{ fontSize: 16, color: '#868686'}}>0112358****</p>
+                <p className='about-comp-word' style={{  fontSize: 16 ,color: '#868686'}}>mail@last-ball.com</p>
             </div>
                 </div>
 
